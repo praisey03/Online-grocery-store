@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(pic2\ for\ cart.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.product p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.product-image img {
+    max-width: 50%;
+    height: auto;
+}
+
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}

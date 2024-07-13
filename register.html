@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="reg-validation.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <b>
+        <h2>Customer Registration</h2>
+        <form id="registrationForm">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" maxlength="50" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="30" required>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" maxlength="100" required></textarea>
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber" maxlength="10" required>
+            <button type="submit"><b>Register</b></button>
+        </form>
+        </b>
+        <div id="message" class="success-message"></div>
+    </div>
+</body>
+</html>

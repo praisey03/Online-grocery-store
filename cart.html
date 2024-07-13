@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>My Cart</h1>
+    </header>
+
+    <!-- Cart Details Section -->
+    <section class="cart-details">
+        <div class="products-list">
+            <div class="product">
+                <h2>Product Name 1</h2>
+                <p>Price: 20</p>
+                <div class="quantity">Quantity: <span>2</span></div>
+            </div>
+            <div class="product">
+                <h2>Product Name 2</h2>
+                <p>Price: 40</p>
+                <div class="quantity">Quantity: <span>1</span></div>
+            </div>
+            <div class="product">
+                <h2>Product Name 3</h2>
+                <p>Price: 50</p>
+                <div class="quantity">Quantity: <span>3</span></div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <div class="total-amount">
+                <p>Total Amount: $210</p>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>

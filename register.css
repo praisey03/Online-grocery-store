@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(pic1\ for\ background.webp);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    animation: puls 1.5s infinite;
+}
+
+.container
+{
+   width: 450px;
+   margin: auto;
+   padding:20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.358);
+   backdrop-filter: blur(10px);
+   background: rgba(255,255,255,0.207);
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+input,textarea{
+    width: 400px;
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #092408;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0);
+}
+
+button{
+    padding:10px;
+    background-color: rgb(144, 236, 90);
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #a8e9a5;
+}
+
+#response{
+    margin-top:10px;
+    border:2px solid #092408;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #1f74296e;
+    width: 90%;
+    color: black;
+}
+
+#response strong{
+    margin-bottom: 5px;
+}
+
+@keyframes pul {
+    
+}
+
+.success-message {
+    color: green;
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login-validate.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Customer Login</h2>
+        <form id="loginForm">
+            <label for="customerId">Customer ID:</label>
+            <input type="text" id="customerId" name="customerId" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" maxlength="30" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="message" class="error-message"></div>
+        <div class="register-link">
+            <p>New User?  <a href="register.html" class="button"><b>  Register Yourself</b></a></p>
+        </div>
+    </div>
+</body>
+</html>

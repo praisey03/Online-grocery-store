@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        /* Resetting default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Profile details section */
+        .profile-details {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-details p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .profile-details button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .profile-details button:hover {
+            background-color: #45a049;
+        }
+
+        .profile-details input {
+            width: calc(100% - 20px); /* Adjust width as needed */
+            padding: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>My Profile</h1>
+    </header>
+    <section class="profile-details">
+        <!-- Profile details form for editing -->
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Karuna" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="abc@gmail.com" required>
+            <!-- Add more fields as needed -->
+            <button type="submit">Update</button>
+        </form>
+    </section>
+
+    <script>
+        // JavaScript for handling form submission
+        const profileForm = document.getElementById('profileForm');
+
+        profileForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            // Perform update actions (simulated here)
+            alert(`Updating profile with Name: ${name} and Email: ${email}`);
+        });
+    </script>
+</body>
+</html>
